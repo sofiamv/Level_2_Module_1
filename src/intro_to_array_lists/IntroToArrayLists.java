@@ -30,6 +30,13 @@ public class IntroToArrayLists {
 			System.out.println(fruit.get(h));
 		}
 		//7. Print only the Strings that have the letter 'e' in them.
-	
+	for(String x: fruit) {
+		for(int a = 0; a < x.length(); a++) {
+			if(x.charAt(a)=='e') {
+			System.out.println(x);
+			break;
+			}
+		}
+	}
 	}
 }
