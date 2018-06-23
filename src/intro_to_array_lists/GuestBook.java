@@ -42,8 +42,11 @@ public class GuestBook implements ActionListener {
 	String userinput = JOptionPane.showInputDialog("Please input name:");
 	coolguests.add(userinput);
 		}if(e.getSource()==button2) {
-			
-		JOptionPane.showMessageDialog(null, );
+			String msg = "";
+			for(int i = 0; i < coolguests.size(); i++) {
+				msg = msg + "Guest " + (i+1) + ":" + coolguests.get(i) + "\n";
+			}
+		JOptionPane.showMessageDialog(null, msg);
 		
 	}}
 }
